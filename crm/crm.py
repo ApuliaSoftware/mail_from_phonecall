@@ -51,7 +51,8 @@ class crm_phonecall(osv.osv):
             'default_partner_ids': [phonecall.user_id.partner_id.id],
             'default_body': body,
             'default_subject': subject,
-            'mark_so_as_sent': True
+            'mark_so_as_sent': True,
+            'default_state': 'outgoing',
         })
         return {
             'type': 'ir.actions.act_window',
